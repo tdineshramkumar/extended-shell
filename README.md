@@ -1,4 +1,4 @@
-## Extending Pipe Functionality in Python
+## Extending Pipe Functionality using Python
 ##### Author: T Dinesh Ram Kumar
 Extending the shell functionality to provide additional piping functionality
 It allows output of one command to go to as many commands as needed by using new operators
