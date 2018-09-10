@@ -1,0 +1,29 @@
+.\" Process this file with
+.\" groff -man -Tascii foo.1
+.\"
+.TH PIPE 1 "SEPTEMBER 2019" Linux "User Manuals"
+.SH NAME
+pipe \- execute commands that need additional piping functionality
+.SH SYNOPSIS
+.B pipe [OPTION]... command
+.SH DESCRIPTION
+.B pipe
+Extends piping functionality of a shell.
+It allows output of one command to go to as many commands as needed by using new operators (||, |||, ||||, ...) and #
+.SH OPTIONS
+.IP "--shell, -s SHELL"
+Use SHELL for executing the individual commands.
+Default SHELL is taken from environment
+.IP "--print, -p"
+Print the parse tree of the command
+.IP "--help, -h"
+Give the usage
+.SH ENVIRONMENT
+.IP SHELL
+Uses the SHELL environment variable to obtain the shell to execute the commands
+Overridden by the
+.B -s, --shell
+option.
+
+.SH AUTHOR
+T Dinesh Ram Kumar <https://github.com/tdineshramkumar/>
